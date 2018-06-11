@@ -36,7 +36,7 @@
 
       $toc.find(tocLinkSelector).each(function() {
         var targetId = $(this).attr('href');
-        if (targetId[0] === "#" || targetId[0] == 'h') {
+        if (targetId[0] === "#" || targetId[0] == '/') {
           headerHeights[targetId] = $(targetId).offset().top;
         }
       });

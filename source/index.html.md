@@ -7,32 +7,12 @@ language_tabs: # must be one of https://git.io/vQNgJ
   - python
   - javascript
 
-toc_footers:
-  - <a href='#'>Sign Up for a Developer Key</a>
-  - <a href='https://github.com/lord/slate'>Documentation Powered by Slate</a>
-
 forward_includes:
-  - api_notes
-  - authorization
   - errors
+  - authorization
+  - api_notes
 
 search: true
-
-multiple_pages: true
-
-resources:
-  - kittens:'/kittens/index.html'
-  - puppers:'/puppers/index.html'
-
-kittens:
-  - Get All Kittens:'get-all-kittens'
-  - Get a specific kitten:'get-a-specific-kitten'
-  - Delete a specific kitten:'delete-a-specific-kitten'
-
-puppers:
-  - Get All Puppers:'get-all-puppers'
-  - Get a specific pupper:'get-a-specific-pupper'
-  - Delete a specific pupper:'delete-a-specific-pupper'
 
 ---
 
