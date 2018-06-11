@@ -127,7 +127,19 @@ under the License.
     <div class="page-wrapper">
       <div class="dark-box"></div>
       <div class="content">
-        <%= page_content %>
+        <%
+          content = page_content
+          if current_page.data.forward_includes
+            current_page.data.forward_includes.each do |include|
+              content = partial("forward_includes/#{include}") + content
+            end
+          end
+        %>
+        <% if current_page.data.forward_includes %>
+          <%= content%>
+        <% else %>
+          <%= page_content %>
+        <% end %>
       </div>
       <div class="dark-box">
         <% if language_tabs.any? %>
